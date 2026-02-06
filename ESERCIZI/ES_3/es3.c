@@ -1,4 +1,3 @@
-# codice
 #include <stdio.h>
 int numeri [5] = {10, 20, 30, 40, 50};
 
@@ -21,7 +20,7 @@ void auxiliarPointer(int arr[], int size) {
     printf("auxiliarPointerFunction\n");
     for(int i = 0; i < size; i++){
         printf("numeri[%d] = %d\n", i, *temp);
-        temp ++;
+         temp ++;
     }
 
 }
@@ -31,23 +30,3 @@ int main() {
     aritmeticPointerPrint(numeri, 5);
     auxiliarPointer(numeri, 5);
 }
-
-# output
-classicPrint:
-numeri[0] = 10
-numeri[1] = 20
-numeri[2] = 30
-numeri[3] = 40
-numeri[4] = 50
-aritmeticPointerFunction:
-numeri[0] = 10
-numeri[1] = 20
-numeri[2] = 30
-numeri[3] = 40
-numeri[4] = 50
-auxiliarPointerFunction
-numeri[0] = 10
-numeri[1] = 20
-numeri[2] = 30
-numeri[3] = 40
-numeri[4] = 50
