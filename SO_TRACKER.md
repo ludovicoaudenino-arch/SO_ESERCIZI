@@ -56,6 +56,11 @@
 - Dereferenziazione in dichiarazione vs utilizzo
 - **Mancanza punto e virgola** (errore frequente)
 - **Assegnazione di intero a puntatore** (senza cast)
+- **Casting errato** (es. `(*char)` invece di `(char*)`)
+- **Dereferenziazione di `void*` senza cast** (es. `*ptr` dove ptr è void*)
+- **Return con valore in funzione `void`**
+- **Typos in keyword** (es. `swtich` invece di `switch`)
+- **Mismatch formato printf** (es. %d per int*)
 - **Mismatch formato printf** (es. %d per int*)
 
 ### Errori Logici
@@ -67,6 +72,7 @@
 - **Uso di `sizeof` su parametri array** (ottenendo la dimensione del puntatore)
 - **Incremento cumulativo di puntatori in un loop** (es. `p += i`)
 - **Errore off-by-one nell'incremento di puntatori** (incremento prima dell'utilizzo)
+- **Mancanza di `break` nello switch** (fall-through involontario)
 
 ### Cattive Pratiche
 
@@ -118,6 +124,9 @@
 | 2026-02-06 | PTR Ex.1 - Dichiarazione e assegnazione | ✅     |
 | 2026-02-06 | PTR Ex.2 - Modifica tramite puntatore     | ✅     |
 | 2026-02-06 | PTR Ex.4 - Array e Puntatori (Completato) | ✅     |
+| 2026-02-06 | PTR Ex.5 - Aritmetica dei Puntatori         | ✅     |
+| 2026-02-06 | PTR Ex.6 - Casting e Endianness (Completato)  | ✅     |
+| 2026-02-06 | PTR Ex.7 - Puntatori Generici (Completato)    | ✅     |
 
 ---
 
