@@ -58,6 +58,7 @@
 - **Assegnazione di intero a puntatore** (senza cast)
 - **Casting errato** (es. `(*char)` invece di `(char*)`)
 - **Dereferencing di `void*` senza cast** (es. `*ptr` dove ptr è void*)
+- **Confusione return vs buffer** (tentativo di ritornare valore per funzioni generiche)
 - **Dereferencing di puntatore NULL o non inizializzato** (tentativo di scrivere in memoria non allocata)
 - **Dimenticanza punto e virgola** (anche dopo correzioni)
 - **Return con valore in funzione `void`**
@@ -71,6 +72,7 @@
 - Tracciamento valori variabili durante iterazioni (off-by-one/timing)
 - Accesso a puntatori non inizializzati (SegFault)
 - Confusione tra indirizzo di p (&p) e valore puntato (*p)
+- **Scrittura su &ptr invece che ptr** (corruzione del puntatore locale invece della memoria)
 - **Uso di `sizeof` su parametri array** (ottenendo la dimensione del puntatore)
 - **Incremento cumulativo di puntatori in un loop** (es. `p += i`)
 - **Errore off-by-one nell'incremento di puntatori** (incremento prima dell'utilizzo)
@@ -82,6 +84,7 @@
 <!-- Registra qui pattern negativi ricorrenti -->
 - Riassegnazione nome array (puntere a array come costante)
 - Uso di scanf %s senza limiti (buffer overflow)
+- **Uso di VLA (Variable Length Array) senza controlli** (rischio Stack Overflow)
 
 ---
 
@@ -132,6 +135,7 @@
 | 2026-02-06 | PTR Ex.6 - Casting e Endianness (Completato)  | ✅     |
 | 2026-02-06 | PTR Ex.7 - Puntatori Generici (Completato)    | ✅     |
 | 2026-02-07 | PTR Ex.8 - Debug Segmentation Fault         | ✅     |
+| 2026-02-11 | PTR Ex.9 - Memory Walker Challenge          | ⚠️     |
 
 ---
 
