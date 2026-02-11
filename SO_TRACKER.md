@@ -1,6 +1,6 @@
 # 📊 SO Tracker - Sistemi Operativi
 
-> **Ultimo aggiornamento**: 2026-02-06
+> **Ultimo aggiornamento**: 2026-02-07
 
 ---
 
@@ -57,7 +57,9 @@
 - **Mancanza punto e virgola** (errore frequente)
 - **Assegnazione di intero a puntatore** (senza cast)
 - **Casting errato** (es. `(*char)` invece di `(char*)`)
-- **Dereferenziazione di `void*` senza cast** (es. `*ptr` dove ptr è void*)
+- **Dereferencing di `void*` senza cast** (es. `*ptr` dove ptr è void*)
+- **Dereferencing di puntatore NULL o non inizializzato** (tentativo di scrivere in memoria non allocata)
+- **Dimenticanza punto e virgola** (anche dopo correzioni)
 - **Return con valore in funzione `void`**
 - **Typos in keyword** (es. `swtich` invece di `switch`)
 - **Mismatch formato printf** (es. %d per int*)
@@ -72,6 +74,7 @@
 - **Uso di `sizeof` su parametri array** (ottenendo la dimensione del puntatore)
 - **Incremento cumulativo di puntatori in un loop** (es. `p += i`)
 - **Errore off-by-one nell'incremento di puntatori** (incremento prima dell'utilizzo)
+- **Accesso fuori dai limiti dell'array** (buffer overflow)
 - **Mancanza di `break` nello switch** (fall-through involontario)
 
 ### Cattive Pratiche
@@ -113,6 +116,7 @@
    - Casting e esplorazione byte (endianness)
    - Puntatori generici (void *)
    - Debug Segmentation Fault
+   - **Challenge Finale**: Memory Walker (buffer parsing, void**, aritmetica avanzata)
 
 ### Valutazioni Effettuate
 
@@ -127,14 +131,15 @@
 | 2026-02-06 | PTR Ex.5 - Aritmetica dei Puntatori         | ✅     |
 | 2026-02-06 | PTR Ex.6 - Casting e Endianness (Completato)  | ✅     |
 | 2026-02-06 | PTR Ex.7 - Puntatori Generici (Completato)    | ✅     |
+| 2026-02-07 | PTR Ex.8 - Debug Segmentation Fault         | ✅     |
 
 ---
 
 ## 📈 Progresso Generale
 
 - **Lezioni analizzate**: 2
-- **Esercizi creati**: 14
-- **Codici valutati**: 4
+- **Esercizi creati**: 15
+- **Codici valutati**: 10
 - **Argomenti padroneggiati**: 2 (GDB, Puntatori)
 
 ---
