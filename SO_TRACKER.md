@@ -1,6 +1,6 @@
 # 📊 SO Tracker - Sistemi Operativi
 
-> **Ultimo aggiornamento**: 2026-02-07
+> **Ultimo aggiornamento**: 2026-02-11
 
 ---
 
@@ -15,10 +15,18 @@
 - [ ] Filesystem
 - [ ] IPC (Inter-Process Communication)
 - [ ] Memoria dinamica (malloc/free)
+- [x] Pipeline di compilazione GCC (Preprocessing, Compiling, Assembling, Linking)
+- [x] Macro e direttive del preprocessore (#define, #include, #ifdef)
+- [x] Header guards e prevenzione inclusioni multiple
+- [x] Ottimizzazione del codice (-O0, -O2, -O3)
+- [x] File oggetto e simboli (globali vs statici)
 
 ### Debug e Strumenti di Sviluppo
 
 - [x] GDB (GNU Debugger) - breakpoint, stepping, backtrace
+- [x] GCC flags e opzioni di compilazione (-E, -S, -c, -g, -D, -I, -l, -L)
+- [x] Analisi Assembly e disassembly
+- [x] Strumenti di ispezione binari (nm, objdump, hexdump)
 
 ### System Calls Critiche
 
@@ -98,6 +106,8 @@
 | 2026-02-05 | Esercizi | Creazione esercizi GDB (6 esercizi)       | ✅     |
 | 2026-02-06 | Lezione  | Trasformazione lezione Puntatori in MD    | ✅     |
 | 2026-02-06 | Esercizi | Creazione esercizi Puntatori (8 esercizi) | ✅     |
+| 2026-02-11 | Lezione  | Formattazione e linting GCC_LESSON.md     | ✅     |
+| 2026-02-11 | Esercizi | Creazione esercizi GCC (8 esercizi)       | ✅     |
 
 ### Esercizi Creati
 
@@ -121,6 +131,16 @@
    - Debug Segmentation Fault
    - **Challenge Finale**: Memory Walker (buffer parsing, void**, aritmetica avanzata)
 
+3. **GCC_Esercizi.md** - 8 esercizi sulla pipeline GCC
+   - Macro e costanti (#define, espansione)
+   - Macro parametriche pericolose (precedenza operatori)
+   - Compilazione condizionale e debug (#ifdef, macro predefinite)
+   - Header guards e inclusioni multiple
+   - Analisi Assembly e ottimizzazione (-O0 vs -O2)
+   - File oggetto e simboli (nm, objdump)
+   - Linking multi-file e librerie (-lm)
+   - **Progetto Completo**: Sistema gestione studenti multi-file
+
 ### Valutazioni Effettuate
 
 | Data       | Esercizio                               | Esito  |
@@ -141,10 +161,10 @@
 
 ## 📈 Progresso Generale
 
-- **Lezioni analizzate**: 2
-- **Esercizi creati**: 15
+- **Lezioni analizzate**: 3
+- **Esercizi creati**: 23
 - **Codici valutati**: 10
-- **Argomenti padroneggiati**: 2 (GDB, Puntatori)
+- **Argomenti padroneggiati**: 3 (GDB, Puntatori, GCC Pipeline)
 
 ---
 
